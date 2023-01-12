@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page2">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.6kD9E_p9RmGMVWcUbwe6QQHaGG&pid=Api&P=0">
+    <h2>Chennai Super Kings</h2></span>
+    <ul>
+        <li>○ Player Count : 25</li>
+        <li>○ Top Batsman : M.S. Dhoni, Jadeja, Ruturaj Gaikwad</li>
+        <li>○ Top Bowler : Deepak Chahar</li>
+        <li>○ Championship Won Count : 3</li>
+       
+    </ul>
+    <div class="Player_grid">
+            <div class="Playercard">
+               <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/1.png">
+               <div class="player_info">
+                <h2>M.S. Dhoni</h2>
+                <h4>
+                Team Name:CSK<br>
+                Price: 12cr<br>
+                Playing Status:True <br>
+                Role:Wicket-Keeper 
+               </h4> 
+               </div>
+            </div>
+            <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/20572.png">
+                <div class="player_info">
+                 <h2>Devon Conway</h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price: 1cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/5443.png">
+                <div class="player_info">
+                 <h2>Ruturaj Gaikwad</h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price: 6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/9.png">
+                <div class="player_info">
+                 <h2>Ravindra Jadeja</h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price: 16cr<br>
+                 Playing Status:True <br>
+                 Role:All-Rounder
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/1735.png">
+                <div class="player_info">
+                 <h2>Moeen Ali</h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price: 8cr<br>
+                 Playing Status:True <br>
+                 Role:All-Rounder
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/140.png">
+                <div class="player_info">
+                 <h2>Deepak Chahar</h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price: 14cr<br>
+                 Playing Status:True <br>
+                 Role: Bowler
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/5431.png">
+                <div class="player_info">
+                 <h2>Shivam Dube </h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price: 4cr<br>
+                 Playing Status:True <br>
+                 Role:All-Rounder
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/100.png">
+                <div class="player_info">
+                 <h2>Ambati Rayudu</h2>
+                 <h4>
+                 Team Name:CSK<br>
+                 Price:6.75cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div>
+    </div>
+    </div>
+
+    <!-- Search Player -->
+    <span>
+        <b>Search Player Name:</b> <input type="text" id="myInput" placeholder="name..." onkeyup="searchFun()"><br>
+     </span>
+
+
+<table class="list" id="storeList">
+    <thead>
+           <tr>
+              <th>Player Name</th>
+              <th>Player Photo</th>
+              <th>Player Role</th>
+              <th>Edit/Delete Player</th>
+
+           </tr>
+    </thead>
+    <tbody>
+    
+         <tbody>
+            <tr>
+                
+                <td>Mahendra Singh Dhoni</td>
+                <td><img class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/3676.png"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Ambati Thirupathi Rayudu</td>
+                <td><img class="player_img"  src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/4176.png"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button><button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+               
+                <td>Ruturaj Dashrat Gaikwad</td>
+                <td><img  class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/66584.png"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+                
+            </tr>
+            <tr>
+               
+                <td>Moeen Munir Ali</td>
+                <td><img  class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/4688.png"></td>
+                <td>All-Rounder</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+                
+                <td>Robin Venu Uthappa</td>
+                <td><img  class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/3723.png"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>KM Asif</td>
+                <td><img class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/67709.png"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+                <td>Dwayne John Bravo</td>
+                <td><img class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/3556.png"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Christopher James Jordan</td>
+                <td><img class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/26718.png"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+               
+                <td>Ravindrasinh Anirudhsinh Jadeja</td>
+                <td><img class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/3850.png"></td>
+                <td>All-Rounder</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+                
+
+                
+            </tr>
+            <tr>
+                <td>Shivam Dube</td>
+                <td><img class="player_img" src="https://xmlns.cricketnext.com/cktnxt/scorecard/crk_player_images/players/128X128/66044.png"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+               
+            </tr>
+        </tbody>
+               
+    </table>
+</div>
+<!-- Add Player -->
+<div class="playerInfo">
+    <h3>ADD PLAYER:</h3>
+    <table class="playerInfo"> 
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onformSubmit()">
+                    <div>
+                        <label for="PlayerName">Player Name</label>
+                        <input type="text" name="playerName" id="PlayerName" placeholder="name...">
+                    </div>
+                    <div>
+                        <label for="PlayerPic">Player Photo</label>
+                        <input type="url" name="PlayerPic" id="PlayerPic" placeholder="image url....">
+                    </div>
+                    <div>
+                        <label for="PlayerRole">Player Role</label>
+                        <input type="text" name="PlayerRole" id="PlayerRole" placeholder="role...">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>   
+    
+     <script src="./csk-script.js"></script>
+</body>
+</html>

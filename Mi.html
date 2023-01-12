@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page2">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.P5XQd9XjFPx4Hwa0FIsaCQHaEM&pid=Api&P=0">
+    <h2>Mumbai Indians Squad</h2>
+    <ul>
+        <li>○ Player Count : 25</li>
+        <li>○ Top Batsman : Rohit Sharma, K. Pollard, Ishan Kishan</li>
+        <li>○ Top Bowler : Kumar Kartikeya Singh</li>
+        <li>○ Championship Won Count : 3</li>
+       
+    </ul>
+    <div class="Player_grid">
+           <a href="mi1.html"> <div class="Playercard">
+               <img src="https://www.mumbaiindians.com/static-assets/images/players/large/3852.png?v=2.15&w=200">
+               <div class="player_info">
+                <h2>Rohit Sharma</h2>
+                <h4>
+                Team Name:MI<br>
+                Price:6.6cr<br>
+                Playing Status:True <br>
+                Role:BatsMan
+               </h4> 
+               </div>
+            </div></a>
+           <a href="mi2.html"><div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/84562.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Dewald Brevis</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div> </a>
+            <a href="mi3.html"> <div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/11803.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Suryakumar Yadav</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div></a>
+             <a href="mi4.html"> <div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/64712.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Ishan Kishan</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div></a>
+             <a href="mi5.html"> <div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/67402.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Tim David</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div></a>
+             <a href="mi6.html"> <div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/63755.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Jasprit Bumrah</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div></a>
+             <a href="mi7.html"><div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/64254.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Jofra Archer</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div></a>
+             <a href="mi8.html"><div class="Playercard">
+                <img src="https://www.mumbaiindians.com/static-assets/images/players/large/66953.png?v=2.15&w=200">
+                <div class="player_info">
+                 <h2>Ramandeep Singh</h2>
+                 <h4>
+                 Team Name:MI<br>
+                 Price:6.6cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div></a>
+    </div>
+</div>
+
+    <!-- Search Player -->
+    <span>
+        <b>Search Player Name:</b> <input type="text" id="myInput" placeholder="name..." onkeyup="searchFun()"><br>
+     </span>
+
+
+<table class="list" id="storeList">
+    <thead>
+           <tr>
+              <th>Player Name</th>
+              <th>Player Photo</th>
+              <th>Player Role</th>
+              <th>Edit/Delete Player</th>
+
+           </tr>
+    </thead>
+    <tbody>
+    
+         <tbody>
+            <tr>
+                
+                <td>Rohit Sharma</td>
+                <td><img class="player_img" src="https://tse4.mm.bing.net/th?id=OIP.M8MB5XRAvl5OkWgcNTuOlAAAAA&pid=Api&P=0"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Jasprit Bumrah</td>
+                <td><img class="player_img"  src="https://tse2.mm.bing.net/th?id=OIP.j3Ty141DkaCRvdW3PNMc1QAAAA&pid=Api&P=0"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+               
+                <td>Suryakumar Yadav</td>
+                <td><img  class="player_img" src="https://tse2.mm.bing.net/th?id=OIP.0TKPVeyRAJEWEnDCyVVtwgAAAA&pid=Api&P=0"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+                
+            </tr>
+            <tr>
+               
+                <td>Kieron Pollard</td>
+                <td><img  class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.uPIoNxXyvBbAmvr3wXbriAAAAA&pid=Api&P=0"></td>
+                <td>All-Rounder</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+                
+                <td>Ishan Kishan</td>
+                <td><img  class="player_img" src="https://tse3.mm.bing.net/th?id=OIP.i9J2G9vXwuiXFX6ytHhI8QAAAA&pid=Api&P=0"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Dewald Brevis</td>
+                <td><img class="player_img" src="https://tse2.mm.bing.net/th?id=OIP.ggorXMwESaOP2r-qC4HwmQAAAA&pid=Api&P=0"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+                <td>Basil Thampi</td>
+                <td><img class="player_img" src="https://tse3.explicit.bing.net/th?id=OIP.kyos23bbPdecRpfM4XbZ1gAAAA&pid=Api&P=0"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Murugan Ashwin</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.b0mzBq-SsxEFdNLT3rhSswAAAA&pid=Api&P=0"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+               
+                <td>Jaydev Unadkat</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.Ao-C2Kb1AgdV7DX8G5x33wAAAA&pid=Api&P=0"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+                
+
+                
+            </tr>
+            <tr>
+                <td>Mayank Markande</td>
+                <td><img class="player_img" src="https://tse2.mm.bing.net/th?id=OIP.gt-Qe7kVtkYJOta1jt4q2AAAAA&pid=Api&P=0"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+               
+            </tr>
+        </tbody>
+               
+    </table>
+
+    <!-- Add Player -->
+
+    <div class="playerInfo">
+        <h3>ADD PLAYER:</h3>
+        <table class="playerInfo"> 
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onformSubmit()">
+                        <div>
+                            <label for="PlayerName">Player Name</label>
+                            <input type="text" name="playerName" id="PlayerName" placeholder="name...">
+                        </div>
+                        <div>
+                            <label for="PlayerPic">Player Photo</label>
+                            <input type="url" name="PlayerPic" id="PlayerPic" placeholder="image url....">
+                        </div>
+                        <div>
+                            <label for="PlayerRole">Player Role</label>
+                            <input type="text" name="PlayerRole" id="PlayerRole" placeholder="role...">
+                        </div>
+                        <div class="form_action--button">
+                            <input type="submit" value="submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div> 
+    
+    
+     <script src="./script.js"></script>
+</body>
+</html>

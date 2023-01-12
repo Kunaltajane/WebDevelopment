@@ -1,0 +1,486 @@
+body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 10000;
+} 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white; 
+}
+
+.heading{
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar_links li{
+    list-style: none;
+}
+.navbar_links li a{
+   text-decoration: none;
+   color: white;
+   padding: 1rem;
+   display: block;
+}
+.navbar_links li:hover{
+    background-color: #555;
+}
+
+.toggle_button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle_button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px){
+    header{
+        position: relative;
+    }
+    .toggle_button{
+        display: flex;
+    }
+    .navbar_links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_links ul{
+          width: 100%;
+          flex-direction: column;
+    }
+  .navbar_links li{
+    text-align: center;
+  }
+
+  .navbar_links li a{
+    padding: .5rem 1rem;
+
+  }
+
+  .navbar_links.active{
+    display: flex;
+  }
+
+}
+
+
+/* Main Body */
+
+
+#info{
+    padding-top: 50px;
+ }
+ 
+ 
+ .card{
+     width: 400px;
+     /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19); */
+     /* padding: 5px; */
+     margin-bottom: 10%;
+     margin-left: 5%;
+     margin-right: 5%;
+     background-color: white;
+     
+ }
+  
+ .card:hover{
+     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ /* .team{
+     display: grid;
+     grid-template-columns: auto auto;
+     padding: 10px;
+  } */
+  
+ .team_info{
+     padding: 10px;
+ }
+ 
+ 
+ .team_img{
+     width: 400px;
+     height: 250px;
+ }
+  
+ .main{
+     margin: 10px;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     background-color: rgb(233, 233, 233); 
+    
+  } 
+ 
+  /* Responsive card */
+  @media (max-width: 750px){
+     .card{
+         width: 300px;  
+     }
+     .team_img{
+         width: 300px;
+         height: 250px;
+     }
+     .main{
+         margin: 10px;
+         display: grid;
+         grid-template-columns: auto;
+         background-color: rgb(233, 233, 233); 
+        
+      } 
+      .team_info{
+         padding: 10px;
+     }
+  }
+ 
+  @media (min-width: 800px){
+     .card{
+         width: 300px;  
+     }
+     .team_img{
+         width: 300px;
+         height: 250px;
+     }
+     .main{
+         margin: 10px;
+         display: grid;
+         grid-template-columns: auto auto;
+         background-color: rgb(233, 233, 233); 
+        
+      } 
+      .team_info{
+         padding: 10px;
+     }
+  }
+  @media (min-width: 900px){
+     .card{
+         width: 400px;  
+     }
+     .team_img{
+         width: 400px;
+         height: 250px;
+     }
+     .main{
+         margin: 10px;
+         display: grid;
+         grid-template-columns: auto auto auto;
+         background-color: rgb(233, 233, 233); 
+        
+      } 
+      .team_info{
+         padding: 10px;
+     }
+  }
+
+
+  /* Footer Css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+   
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+.footer{
+    margin: 10px;
+    background-color: #242626;
+    padding: 70px 0px;
+    
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffff;
+    padding-left: 10px;
+}
+ .social_links {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 255, 255,0.2);
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color: #ffff;
+}
+
+.social_links:hover{
+    height: 40px;
+    width: 40px;
+}
+
+/* Responsive Footer */
+
+@media (max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+/* Mi Css Start */
+
+.Playercard{
+    width: 300px;
+    /* box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* padding: 5px; */
+    margin-bottom: 10%;
+    /* margin-left: 5%; */
+    margin-right: 5%;
+    background-color: rgb(243, 242, 242);
+    border-radius: 10%;
+   
+  }
+  
+  .player_info{
+    text-align: center;
+  }
+  .Grid_img{
+    width: 300px;
+    align-items: center;
+  }
+  
+  .Playercard:hover{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card_img{
+    width: 250px;
+    height: 300px;
+  }
+  
+  .Player_grid{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: rgb(233, 233, 233);  */
+    align-items: center;
+  }
+
+  .Player_grid a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Search Or Add Player */
+
+  h2{
+    padding: 20px;
+  }
+  
+  table, tr {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding-bottom: 20px;
+      
+  } 
+  td{
+      font-size: 20px;
+      font-weight: 600;
+    padding: 10px 50px 10px 50px;
+  
+  }
+  
+  
+  tr:hover{
+    background-color: gray;
+      box-shadow: 20px 10px 20px 0 rgba(0, 0, 0, 0.2), 20px 10px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #myInput{
+    margin: 20px;
+    width: 50%;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  
+  table{
+      /* background-color: white; */
+      margin: 50px;
+      /* position: relative; */
+      /* width: 110%; */
+  }
+  
+  .player_img{
+      height: 150px;
+      width: 150px;
+      border-radius: 10px;
+  }
+  
+  
+  
+  
+  .playerInfo{
+    width: 80%;
+    margin: 40px auto;
+    background-color: rgb(173, 173, 221) ;
+  }
+  
+  
+  table.list{
+    text-align: center;
+    width: 70%;
+  }
+  
+  td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px 15px;
+  }
+  
+  
+  
+  thead{
+    justify-content: space-between;
+    
+  }
+  
+  input[type="text"],input[type="url"]{
+    width: 91%;
+    padding: 17px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+    color: blue;
+  }
+  
+  input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  input[type="submit"]:hover{
+    background: rgb(9, 9, 214);
+  }
+  
+  input[type="reset"]:hover{
+    background: rgb(9, 9, 214);
+  }
+  
+  button{
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0px 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover{
+    background: rgb(9, 9, 214);
+  }
+  
+  h3{
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  .page2{
+    padding-top: 5%;
+  }
+  
+  

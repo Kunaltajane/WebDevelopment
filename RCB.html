@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Royal Challengers Bangalore</h2></span>
+ 
+    <div class="Player_grid">
+            <div class="Playercard">
+               <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/24.png">
+               <div class="player_info">
+                <h2>Faf du Plessis</h2>
+                <h4>
+                Team Name:RCB<br>
+                Price: 7cr<br>
+                Playing Status:True <br>
+                Role: All-Rounder
+               </h4> 
+               </div>
+            </div>
+            <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/3020.png">
+                <div class="player_info">
+                 <h2>Finn Allen</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price: 80 Lakh<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/5471.png">
+                <div class="player_info">
+                 <h2>Rajat Patidar</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price:20Lakh<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/164.png">
+                <div class="player_info">
+                 <h2>Virat Kohli</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price: 15cr<br>
+                 Playing Status:True <br>
+                 Role:BatsMan
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/282.png">
+                <div class="player_info">
+                 <h2>Glenn Maxwell</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price: 11cr<br>
+                 Playing Status:True <br>
+                 Role:All-Rounder
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/2758.png">
+                <div class="player_info">
+                 <h2>David Willey</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price: 2cr<br>
+                 Playing Status:True <br>
+                 Role: All-Rounder
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/157.png">
+                <div class="player_info">
+                 <h2>Harshal Patel</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price:10.75cr<br>
+                 Playing Status:True <br>
+                 Role:Bowler
+                </h4> 
+                </div>
+             </div>
+             <div class="Playercard">
+                <img class="card_img" src="https://assets.iplt20.com/ipl/IPLHeadshot2022/3840.png">
+                <div class="player_info">
+                 <h2>Mohammed Siraj</h2>
+                 <h4>
+                 Team Name:RCB<br>
+                 Price: 7cr<br>
+                 Playing Status:True <br>
+                 Role:Bowler
+                </h4> 
+                </div>
+             </div>
+    </div>
+
+    <!-- Search Player -->
+    <span>
+        <b>Search Player Name:</b> <input type="text" id="myInput" placeholder="name..." onkeyup="searchFun()"><br>
+     </span>
+
+
+<table class="list" id="storeList">
+    <thead>
+           <tr>
+              <th>Player Name</th>
+              <th>Player Photo</th>
+              <th>Player Role</th>
+              <th>Edit/Delete Player</th>
+
+           </tr>
+    </thead>
+    <tbody>
+    
+         <tbody>
+            <tr>
+                
+                <td>Virat Kohli	</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.p5ARKuXjpqZdrkpDJ3xpKwAAAA&pid=Api&rs=1&c=1&qlt=95&w=99&h=120"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Glenn Maxwell</td>
+                <td><img class="player_img"  src="https://tse1.mm.bing.net/th?id=OIP.tFnw6vd_JH8OcC-dB9aREQAAAA&pid=Api&P=0"></td>
+                <td>All-Rounder</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+               
+                <td>Mohammed Siraj</td>
+                <td><img  class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.q6huD_QIN9nweURQyGEZtgAAAA&pid=Api&rs=1&c=1&qlt=95&w=111&h=111"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+                
+            </tr>
+            <tr>
+               
+                <td>Dinesh Karthik</td>
+                <td><img  class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.jix6HjDZxpJYtbJW_IDyMwAAAA&pid=Api&rs=1&c=1&qlt=95&w=82&h=119"></td>
+                <td>Wicket-Keeper</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+                
+                <td>Faf Du Plessis</td>
+                <td><img  class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.2pe7AeJp4SpKJPloY3mGiAHaFY&pid=Api&rs=1&c=1&qlt=95&w=153&h=111"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Wanindu Hasaranga</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.bFEd2plC7k1daPJhceppOgHaHa&pid=Api&rs=1&c=1&qlt=95&w=113&h=113"></td>
+                <td>Batsman</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+                <td>Harshal Patel</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.VrFmC4Qf3GwCd7T9NBa6RgAAAA&pid=Api&rs=1&c=1&qlt=95&w=80&h=105"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+              
+                <td>Siddharth Kaul</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.vo_vBnL1h1wnpIYmWb3O7QAAAA&pid=Api&rs=1&c=1&qlt=95&w=109&h=109"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+            </tr>
+            <tr>
+               
+                <td>David Willey</td>
+                <td><img class="player_img" src="https://tse1.mm.bing.net/th?id=OIP.wdHThaklmWAj2kHglWHsngHaFY&pid=Api&rs=1&c=1&qlt=95&w=171&h=124"></td>
+                <td>All-Rounder</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+                
+                
+
+                
+            </tr>
+            <tr>
+                <td>Anuj Rawat</td>
+                <td><img class="player_img" src="https://tse3.mm.bing.net/th?id=OIP.bNwdcbCvRrmDb5i1RHyNSgHaKX&pid=Api&P=0"></td>
+                <td>Bowler</td>
+                <td><button onClick="onEdit(this)">Edit</button> <button onClick="onDelete(this)">Delete</button></td>
+               
+            </tr>
+        </tbody>
+               
+    </table>
+</div>
+
+<!-- Add Player -->
+
+<div class="playerInfo">
+    <h3>ADD PLAYER:</h3>
+    <table class="playerInfo"> 
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onformSubmit()">
+                    <div>
+                        <label for="PlayerName">Player Name</label>
+                        <input type="text" name="playerName" id="PlayerName" placeholder="name...">
+                    </div>
+                    <div>
+                        <label for="PlayerPic">Player Photo</label>
+                        <input type="url" name="PlayerPic" id="PlayerPic" placeholder="image url....">
+                    </div>
+                    <div>
+                        <label for="PlayerRole">Player Role</label>
+                        <input type="text" name="PlayerRole" id="PlayerRole" placeholder="role...">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>   
+    
+     <script src="./rcb.js"></script>
+</body>
+</html>
